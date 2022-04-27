@@ -84,7 +84,6 @@ h2 {
   display: flex;
   flex-direction: column;
   position: absolute;
-  opacity: 1;
   top: 0;
   bottom: 0;
   right: 0;
@@ -103,6 +102,16 @@ h2 {
   flex-direction: column;
   gap: 30px;
   justify-content: space-between;
+}
+
+.nav-row {
+  display: flex;
+  gap: 13px;
+  justify-content: flex-start;
+}
+
+.nav-expansion {
+  padding-left: 23px;
 }
 
 .hero-img-mobile {
