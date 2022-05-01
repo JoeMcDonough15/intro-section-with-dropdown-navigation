@@ -29,47 +29,115 @@
             <input class="hide" type="checkbox" />
             <span class="hamburger-menu"></span>
           </label>
+          <div class="nav-menu hide" id="modal">
+            <div class="nav-menu-row">
+              <img
+                src="images/icon-close-menu.svg"
+                class="close-mobile-menu"
+                id="close-modal"
+              />
+            </div>
+            <nav class="nav">
+              <div class="nav-row">
+                <a href="#">Features</a>
+                <img
+                  class="arrow"
+                  id="nav-expansion-arrow-one"
+                  src="images/icon-arrow-down.svg"
+                  alt="clickable arrow pointing down"
+                />
+              </div>
+              <div id="nav-expansion-one" class="nav nav-expansion-one hide">
+                <div class="nav-row">
+                  <img src="images/icon-todo.svg" alt="todo icon" />
+                  <a href="#">Todo List</a>
+                </div>
+                <div class="nav-row">
+                  <img src="images/icon-calendar.svg" alt="calendar icon" />
+                  <a href="#">Calendar</a>
+                </div>
+                <div class="nav-row">
+                  <img src="images/icon-reminders.svg" alt="reminders icon" />
+                  <a href="#">Reminders</a>
+                </div>
+                <div class="nav-row">
+                  <img src="images/icon-planning.svg" alt="planning icon" />
+                  <a href="#">Planning</a>
+                </div>
+              </div>
+              <div class="nav-row">
+                <a href="#">Company</a>
+                <img
+                  class="arrow"
+                  id="nav-expansion-arrow-two"
+                  src="images/icon-arrow-down.svg"
+                  alt="clickable arrow pointing down"
+                />
+              </div>
+              <div id="nav-expansion-two" class="nav nav-expansion-two hide">
+                <a href="#">History</a>
+                <a href="#">Our Team</a>
+                <a href="#">Blog</a>
+              </div>
+              <a href="#">Careers</a>
+              <a href="#">About</a>
+            </nav>
+            <div class="nav-buttons hide">
+              <a href="#" class="login">Login</a>
+              <a href="#" class="register">Register</a>
+            </div>
+          </div>
         </header>
 
-        <img
-          class="hero-img-mobile"
-          src="images/image-hero-mobile.png"
-          alt="mobile hero image"
-        />
         <main class="main-section">
-          <h2 class="main-header">Make remote work</h2>
-          <p class="main-text">
-            Get your team in sync, no matter your location. Streamline
-            processes, create team rituals, and watch productivity soar.
-          </p>
-          <a class="main-button" href="#">Learn more</a>
+          <aside class="main-section-image">
+            <img
+              class="hero-img-mobile"
+              src="images/image-hero-mobile.png"
+              alt="mobile hero image"
+            />
+            <img
+              class="hero-img-desktop hide"
+              src="images/image-hero-desktop.png"
+              alt="mobile hero image"
+            />
+          </aside>
+          <section class="main-section-text">
+            <h2 class="main-header">
+              <span class="lg-screen-header">Make</span> remote work
+            </h2>
+            <p class="main-text">
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <a class="main-button" href="#">Learn more</a>
+            <footer class="footer">
+              <img
+                class="footer-img"
+                src="images/client-databiz.svg"
+                alt="databiz link"
+              />
+
+              <img
+                class="footer-img"
+                src="images/client-audiophile.svg"
+                alt="audiophile link"
+              />
+
+              <img
+                class="footer-img"
+                src="images/client-meet.svg"
+                alt="meet link"
+              />
+
+              <img
+                class="footer-img"
+                src="images/client-maker.svg"
+                alt="maker link"
+              />
+            </footer>
+          </section>
         </main>
-
-        <footer class="footer">
-          <img
-            class="footer-img"
-            src="images/client-databiz.svg"
-            alt="databiz link"
-          />
-
-          <img
-            class="footer-img"
-            src="images/client-audiophile.svg"
-            alt="audiophile link"
-          />
-
-          <img
-            class="footer-img"
-            src="images/client-meet.svg"
-            alt="meet link"
-          />
-
-          <img
-            class="footer-img"
-            src="images/client-maker.svg"
-            alt="maker link"
-          />
-        </footer>
 
         <div class="attribution hide">
           Challenge by
@@ -77,58 +145,6 @@
             >Frontend Mentor</a
           >. Coded by <a href="#">Joe McDonough</a>.
         </div>
-      </div>
-      <div class="mobile-menu hide" id="modal">
-        <div class="mobile-menu-row">
-          <img
-            src="images/icon-close-menu.svg"
-            class="close-mobile-menu"
-            id="close-modal"
-          />
-        </div>
-        <nav class="nav">
-          <div class="nav-row">
-            <a href="#">Features</a>
-            <img
-              id="nav-expansion-arrow-one"
-              src="images/icon-arrow-down.svg"
-              alt="clickable arrow pointing down"
-            />
-          </div>
-          <div id="nav-expansion-one" class="nav nav-expansion hide">
-            <div class="nav-row">
-              <img src="images/icon-todo.svg" alt="todo icon" />
-              <a href="#">Todo List</a>
-            </div>
-            <div class="nav-row">
-              <img src="images/icon-calendar.svg" alt="calendar icon" />
-              <a href="#">Calendar</a>
-            </div>
-            <div class="nav-row">
-              <img src="images/icon-reminders.svg" alt="reminders icon" />
-              <a href="#">Reminders</a>
-            </div>
-            <div class="nav-row">
-              <img src="images/icon-planning.svg" alt="planning icon" />
-              <a href="#">Planning</a>
-            </div>
-          </div>
-          <div class="nav-row">
-            <a href="#">Company</a>
-            <img
-              id="nav-expansion-arrow-two"
-              src="images/icon-arrow-down.svg"
-              alt="clickable arrow pointing down"
-            />
-          </div>
-          <div id="nav-expansion-two" class="nav nav-expansion hide">
-            <a href="#">History</a>
-            <a href="#">Our Team</a>
-            <a href="#">Blog</a>
-          </div>
-          <a href="#">Careers</a>
-          <a href="#">About</a>
-        </nav>
       </div>
     </div>
     <script src="js/main.js" type="text/javascript"></script>

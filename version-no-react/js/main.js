@@ -48,3 +48,22 @@ navExpansionArrowTwo.addEventListener("click", () => {
   }
   navExpansionTwo.classList.toggle("hide");
 });
+
+///////  Media Queries //////
+
+// const largeScreen = window.matchMedia("(min-width: 900px)");
+// const smallScreen = window.matchMedia("(max-width: 899px)");
+// function largeScreenStyles(mediaQuery) {
+//   openModal.classList.add("hide");
+//   modal.classList.remove("hide");
+//   closeModal.classList.add("hide");
+// }
+
+// function smallScreenStyles(mediaQuery) {
+//   openModal.classList.remove("hide");
+//   modal.classList.add("hide");
+//   closeModal.classList.remove("hide");
+// }
+
+// smallScreen.addEventListener("change", smallScreenStyles);
+// largeScreen.addEventListener("change", largeScreenStyles);
