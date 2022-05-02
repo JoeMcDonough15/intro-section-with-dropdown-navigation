@@ -25,6 +25,7 @@ a {
 
 h2 {
   color: var(--almost-black);
+  font-weight: 700;
 }
 
 .main-container {
@@ -107,6 +108,7 @@ h2 {
 }
 
 .nav-row {
+  align-items: center;
   display: flex;
   gap: 13px;
   justify-content: flex-start;
@@ -124,6 +126,10 @@ h2 {
 
 .main-section {
   text-align: center;
+}
+
+.main-section-text {
+  padding: 0 20px;
 }
 
 .main-header {
@@ -193,6 +199,11 @@ h2 {
     position: relative;
   }
 
+  .arrow {
+    height: 5px;
+    width: 10px;
+  }
+
   .arrow:hover {
     cursor: pointer;
   }
@@ -255,12 +266,13 @@ h2 {
   }
 
   .main-section-image {
+    flex-shrink: 0;
+    max-width: 482px;
     order: 2;
   }
 
   .hero-img-desktop {
     display: block;
-    /* height: 100%; */
     width: 100%;
   }
 
