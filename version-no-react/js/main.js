@@ -1,4 +1,4 @@
-const cardContainer = document.getElementById("card-container");
+const blurContainer = document.getElementById("blur");
 const modal = document.getElementById("modal");
 const openModal = document.getElementById("open-modal");
 const closeModal = document.getElementById("close-modal");
@@ -8,15 +8,15 @@ const navExpansionOne = document.getElementById("nav-expansion-one");
 const navExpansionTwo = document.getElementById("nav-expansion-two");
 
 openModal.addEventListener("click", () => {
-  modal.classList.remove("hide");
+  modal.classList.add("nav-menu-appear");
   openModal.classList.add("hide");
-  cardContainer.classList.add("blur");
+  blurContainer.classList.add("blur");
 });
 
 closeModal.addEventListener("click", () => {
-  modal.classList.add("hide");
+  modal.classList.remove("nav-menu-appear");
   openModal.classList.remove("hide");
-  cardContainer.classList.remove("blur");
+  blurContainer.classList.remove("blur");
 });
 
 navExpansionArrowOne.addEventListener("click", () => {
