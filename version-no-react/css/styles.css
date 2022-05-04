@@ -186,11 +186,11 @@ h2 {
     flex-direction: row;
     justify-content: space-between;
     left: 185.95px;
-    padding: 35px 10px 0 55px;
+    padding: 35px 10px 55px 0;
     position: fixed;
     bottom: 90%;
     top: 0;
-    width: 85.5%;
+    width: 86%;
   }
 
   .nav {
