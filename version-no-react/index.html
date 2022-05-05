@@ -28,6 +28,55 @@
           <input class="hide" type="checkbox" />
           <span class="hamburger-menu"></span>
         </label>
+        <nav class="nav hide">
+          <div class="nav-row-one">
+            <div class="nav-row">
+              <a href="#">Features</a>
+              <img
+                class="arrow nav-expansion-arrow-features"
+                src="images/icon-arrow-down.svg"
+                alt="clickable arrow pointing down"
+              />
+            </div>
+            <div class="nav-expansion nav-expansion-features hide">
+              <div class="nav-row">
+                <img src="images/icon-todo.svg" alt="todo icon" />
+                <a href="#">Todo List</a>
+              </div>
+              <div class="nav-row">
+                <img src="images/icon-calendar.svg" alt="calendar icon" />
+                <a href="#">Calendar</a>
+              </div>
+              <div class="nav-row">
+                <img src="images/icon-reminders.svg" alt="reminders icon" />
+                <a href="#">Reminders</a>
+              </div>
+              <div class="nav-row">
+                <img src="images/icon-planning.svg" alt="planning icon" />
+                <a href="#">Planning</a>
+              </div>
+            </div>
+            <div class="nav-row">
+              <a href="#">Company</a>
+              <img
+                class="arrow nav-expansion-arrow-company"
+                src="images/icon-arrow-down.svg"
+                alt="clickable arrow pointing down"
+              />
+            </div>
+            <div class="nav-expansion nav-expansion-company hide">
+              <a href="#">History</a>
+              <a href="#">Our Team</a>
+              <a href="#">Blog</a>
+            </div>
+            <a href="#">Careers</a>
+            <a href="#">About</a>
+          </div>
+          <div class="nav-row-two">
+            <a href="#" class="login">Login</a>
+            <a href="#" class="register">Register</a>
+          </div>
+        </nav>
       </header>
 
       <main class="main-section">
@@ -87,64 +136,58 @@
         >. Coded by <a href="#">Joe McDonough</a>.
       </div>
     </div>
-    <div class="nav-menu" id="modal">
-      <div class="nav-menu-row">
+    <nav class="mobile-nav-menu" id="modal">
+      <div class="mobile-nav-menu-row">
         <img
           src="images/icon-close-menu.svg"
           class="close-mobile-menu"
           id="close-modal"
         />
       </div>
-      <nav class="nav">
-        <div class="nav-row">
+      <div class="mobile-nav">
+        <div class="mobile-nav-row">
           <a href="#">Features</a>
           <img
-            class="arrow"
-            id="nav-expansion-arrow-one"
+            class="arrow nav-expansion-arrow-features"
             src="images/icon-arrow-down.svg"
             alt="clickable arrow pointing down"
           />
         </div>
-        <div id="nav-expansion-one" class="nav nav-expansion-one hide">
-          <div class="nav-row">
+        <div class="mobile-nav nav-expansion-features hide">
+          <div class="mobile-nav-row">
             <img src="images/icon-todo.svg" alt="todo icon" />
             <a href="#">Todo List</a>
           </div>
-          <div class="nav-row">
+          <div class="mobile-nav-row">
             <img src="images/icon-calendar.svg" alt="calendar icon" />
             <a href="#">Calendar</a>
           </div>
-          <div class="nav-row">
+          <div class="mobile-nav-row">
             <img src="images/icon-reminders.svg" alt="reminders icon" />
             <a href="#">Reminders</a>
           </div>
-          <div class="nav-row">
+          <div class="mobile-nav-row">
             <img src="images/icon-planning.svg" alt="planning icon" />
             <a href="#">Planning</a>
           </div>
         </div>
-        <div class="nav-row">
+        <div class="mobile-nav-row">
           <a href="#">Company</a>
           <img
-            class="arrow"
-            id="nav-expansion-arrow-two"
+            class="arrow nav-expansion-arrow-company"
             src="images/icon-arrow-down.svg"
             alt="clickable arrow pointing down"
           />
         </div>
-        <div id="nav-expansion-two" class="nav nav-expansion-two hide">
+        <div class="mobile-nav nav-expansion-company hide">
           <a href="#">History</a>
           <a href="#">Our Team</a>
           <a href="#">Blog</a>
         </div>
         <a href="#">Careers</a>
         <a href="#">About</a>
-      </nav>
-      <div class="nav-buttons hide">
-        <a href="#" class="login">Login</a>
-        <a href="#" class="register">Register</a>
       </div>
-    </div>
+    </nav>
 
     <script src="js/main.js" type="text/javascript"></script>
   </body>
