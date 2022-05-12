@@ -30,15 +30,7 @@ closeModal.addEventListener("click", () => {
 
 navExpansionArrowsFeatures.forEach((featuresArrow) => {
   featuresArrow.addEventListener("click", () => {
-    if (featuresArrow.getAttribute("src") === "images/icon-arrow-down.svg") {
-      featuresArrow.setAttribute("src", "images/icon-arrow-up.svg");
-      featuresArrow.setAttribute("alt", "clickable arrow pointing up");
-    } else if (
-      featuresArrow.getAttribute("src") === "images/icon-arrow-up.svg"
-    ) {
-      featuresArrow.setAttribute("src", "images/icon-arrow-down.svg");
-      featuresArrow.setAttribute("alt", "clickable arrow pointing down");
-    }
+    featuresArrow.classList.toggle("arrow-rotate");
     navExpansionFeatures.forEach((featureExpansion) => {
       featureExpansion.classList.toggle("hide");
     });
@@ -47,15 +39,7 @@ navExpansionArrowsFeatures.forEach((featuresArrow) => {
 
 navExpansionArrowsCompany.forEach((companyArrow) => {
   companyArrow.addEventListener("click", () => {
-    if (companyArrow.getAttribute("src") === "images/icon-arrow-down.svg") {
-      companyArrow.setAttribute("src", "images/icon-arrow-up.svg");
-      companyArrow.setAttribute("alt", "clickable arrow pointing up");
-    } else if (
-      companyArrow.getAttribute("src") === "images/icon-arrow-up.svg"
-    ) {
-      companyArrow.setAttribute("src", "images/icon-arrow-down.svg");
-      companyArrow.setAttribute("alt", "clickable arrow pointing down");
-    }
+    companyArrow.classList.toggle("arrow-rotate");
     navExpansionCompany.forEach((companyExpansion) => {
       companyExpansion.classList.toggle("hide");
     });
